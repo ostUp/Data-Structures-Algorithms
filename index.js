@@ -289,3 +289,113 @@
 
 // console.log(shortPath(graph, "a", "g"));
 
+// !=================================================================
+
+// Tree
+
+// const tree = [
+//    {
+//       v: 5,
+//       c: [
+//          {
+//             v: 10,
+//             c: [
+//                {
+//                   v: 11,
+//                },
+//             ],
+//          },
+//          {
+//             v: 7,
+//             c: [
+//                {
+//                   v: 5,
+//                   c: [
+//                      {
+//                         v: 1,
+//                      },
+//                   ],
+//                },
+//             ],
+//          },
+//       ],
+//    },
+//    {
+//       v: 5,
+//       c: [
+//          {
+//             v: 10,
+//          },
+//          {
+//             v: 15,
+//          },
+//       ],
+//    },
+// ];
+
+// const recursive = (tree) => {
+//    let sum = 0;
+//    tree.forEach((node) => {
+//       sum += node.v;
+//       if (!node.c) {
+//          return node.v;
+//       }
+//       sum += recursive(node.c);
+//    });
+//    return sum;
+// };
+
+// const iteration = (tree) => {
+//    if (!tree.length) {
+//       return 0;
+//    }
+//    let sum = 0;
+//    let stack = [];
+//    tree.forEach((node) => stack.push(node));
+//    while (stack.length) {
+//       const node = stack.pop();
+//       sum += node.v;
+//       if (node.c) {
+//          node.c.forEach((child) => stack.push(child));
+//       }
+//    }
+//    return sum;
+// };
+
+// console.log(iteration(tree));
+
+// !=================================================================
+
+// Cash
+
+// function cashFunction(fn) {
+//    const cash = {};
+//    return function (n) {
+//       if (cash[n]) {
+//          console.log("Взято з кешу", cash[n]);
+//          return cash[n];
+//       }
+//       let result = fn(n);
+//       console.log("Порахувала ф-ція = ", result);
+//       cash[n] = result;
+//       return result;
+//    };
+// }
+
+// function factorial(n) {
+//    let result = 1;
+//    while (n != 1) {
+//       result *= n;
+//       n -= 1;
+//    }
+//    return result;
+// }
+
+// const cashFactorial = cashFunction(factorial);
+
+// cashFactorial(5);
+// cashFactorial(4);
+// cashFactorial(3);
+// cashFactorial(4);
+// cashFactorial(5);
+// cashFactorial(1);
