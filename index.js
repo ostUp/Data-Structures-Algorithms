@@ -167,3 +167,56 @@
 // console.log("count", count);
 
 // !=================================================================
+
+// Recursion
+
+// const factorial = (n) => {
+//    if (n === 1) {
+//       return 1;
+//    }
+//    return n * factorial(n - 1);
+// };
+
+// Числа фібаначі -  1,1,2,3,5,8,13,21
+
+// const fibonachi = (n) => {
+//    if (n === 1 || n === 2) {
+//       return 1;
+//    }
+//    return fibonachi(n - 1) + fibonachi(n - 2);
+// };
+
+// console.log(fibonachi(8));
+
+// !=================================================================
+
+// Пошук в ширину в графі
+
+// const graph = {};
+// graph.a = ["b", "c"];
+// graph.b = ["f"];
+// graph.c = ["d", "e"];
+// graph.d = ["f"];
+// graph.e = ["f"];
+// graph.f = ["g"];
+
+// function breadthSearch(graph, start, end) {
+//    let queue = [];
+//    queue.push(start);
+//    while (queue.length > 0) {
+//       const current = queue.shift();
+//       if (!graph[current]) {
+//          graph[current] = [];
+//       }
+//       if (graph[current].includes(end)) {
+//          return true;
+//       } else {
+//          queue = [...queue, ...graph[current]];
+//       }
+//    }
+//    return false;
+// }
+
+// console.log(breadthSearch(graph, "a", "e"));
+
+// !=================================================================
