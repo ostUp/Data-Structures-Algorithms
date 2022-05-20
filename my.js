@@ -193,3 +193,50 @@
 // }
 // console.log(getPlan(200, 3, 50));
 // console.log(getPlan(1000, 6, 20));
+
+// ============================
+
+// function checkNumber(number) {
+// 	let arr = [];
+// 	if (number > 0 && number % 2 == 0 && number % 10 == 0) {
+// 		arr.push(true, true, true);
+// 	} else if (number > 0 && number % 10 == 0) {
+// 		arr.push(true, false, true);
+// 	} else if (number > 0 && number % 2 == 0) {
+// 		arr.push(true, true, false);
+// 	} else if (number === 0) {
+// 		arr.push(false, true, true);
+// 	} else if (number < 0 && number % 2 == 0) {
+// 		arr.push(false, true, false);
+// 	} else if (number < 0) {
+// 		arr.push(false, false, false);
+// 	} else if (number > 0) {
+// 		arr.push(true, false, false);
+// 	}
+// 	return arr;
+// }
+// console.log(checkNumber(10));
+
+// ============================
+
+// function combineArrays(first, second) {
+// 	if (first.length == 0) {
+// 		return [];
+// 	}
+// 	let resArr = [];
+// 	for (let i = 0; i < first.length; i++) {
+// 		resArr.push(first[i] + second[i]);
+// 	}
+// 	return resArr;
+// }
+
+// console.log(combineArrays([1, 2, 5], [3, 6, 1]));
+
+// ============================
+
+// function splitString(str) {
+// 	const arr = str.split('');
+
+// 	return arr.map((el, i) => el + (arr.splice(i + 1, 1)[0] || '_')).filter((el) => el);
+// }
+// console.log(splitString('abfkmdkgmdfkmkfmlkmfdc'));
