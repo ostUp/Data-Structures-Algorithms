@@ -169,13 +169,27 @@
 
 // ============================
 
-function getLocation(coordinates, commands) {
-	let arr = coordinates.slice();
-	commands.forEach((cmd) => {
-		arr[0] += cmd === 'left' ? -1 : cmd === 'right' ? 1 : 0;
-		arr[1] += cmd === 'back' ? -1 : cmd === 'forward' ? 1 : 0;
-	});
-	return arr;
-}
+// function getLocation(coordinates, commands) {
+// 	let arr = coordinates.slice();
+// 	commands.forEach((cmd) => {
+// 		arr[0] += cmd === 'left' ? -1 : cmd === 'right' ? 1 : 0;
+// 		arr[1] += cmd === 'back' ? -1 : cmd === 'forward' ? 1 : 0;
+// 	});
+// 	return arr;
+// }
 
-console.log(getLocation([0, 0], ['forward', 'right']));
+// console.log(getLocation([0, 0], ['forward', 'right']));
+
+// ============================
+
+// function getPlan(startProduction, numberOfMonths, percent) {
+// 	const targets = [];
+// 	let target = startProduction;
+// 	for (let month = 1; month <= numberOfMonths; month++) {
+// 		target += Math.floor((target * percent) / 100);
+// 		targets.push(target);
+// 	}
+// 	return targets;
+// }
+// console.log(getPlan(200, 3, 50));
+// console.log(getPlan(1000, 6, 20));
