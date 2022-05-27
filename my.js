@@ -268,3 +268,40 @@
 // 	'1762-1807',
 // 	'1668-1731',
 // ]);
+
+// --------------
+
+// function removeVowelKeys(keys) {
+// 	let res = [];
+// 	for (let i = 0; i < keys.length; i++) {
+// 		if (
+// 			keys[i].charAt(0).toLowerCase() !== 'a' &&
+// 			keys[i].charAt(0).toLowerCase() !== 'e' &&
+// 			keys[i].charAt(0).toLowerCase() !== 'i' &&
+// 			keys[i].charAt(0).toLowerCase() !== 'o' &&
+// 			keys[i].charAt(0).toLowerCase() !== 'u' &&
+// 			keys[i].charAt(0).toLowerCase() !== 'y'
+// 		) {
+// 			res.push(keys[i]);
+// 		}
+// 	}
+// 	return res;
+// }
+// removeVowelKeys(['alarm', 'chip', 'isValid', 'Advice', 'onClick']);
+
+// ===============
+
+// function validatePassword(password) {
+// 	if (
+// 		/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/.test(password)
+// 	) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// }
+
+// console.log(validatePassword('@dmiN122'));
+// console.log(validatePassword('password'));
+// console.log(validatePassword('Admin12'));
+// console.log(validatePassword('Admin123'));
