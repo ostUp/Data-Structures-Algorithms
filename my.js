@@ -240,3 +240,31 @@
 // 	return arr.map((el, i) => el + (arr.splice(i + 1, 1)[0] || '_')).filter((el) => el);
 // }
 // console.log(splitString('abfkmdkgmdfkmkfmlkmfdc'));
+
+// =============================
+
+// function getAverageAge(years) {
+// 	let res = [0, 0];
+// 	for (let i = 0; i < years.length; i++) {
+// 		if (+years[i].slice(0, 4) < +years[i].slice(5, 9)) {
+// 			res[0] += +years[i].slice(5, 9) - +years[i].slice(0, 4);
+// 			res[1] += 1;
+// 		}
+// 	}
+// 	return Math.round(res[0] / res[1]);
+// }
+
+// getAverageAge([
+// 	'1907-1997',
+// 	'1761-1833',
+// 	'1535-1582',
+// 	'1918-2012',
+// 	'1877-1968',
+// 	'1696-1724',
+// 	'1602-1642',
+// 	'1692-1743',
+// 	'1695-1762',
+// 	'1570-1636',
+// 	'1762-1807',
+// 	'1668-1731',
+// ]);
